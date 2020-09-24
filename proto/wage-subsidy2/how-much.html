@@ -3071,7 +3071,7 @@
             prev3MonthPrefix = "0";
           }
           var claimMonth = new Date(
-            "2020-" + claimMonthPrefix + getClaimMonth($("#claim-period").val()) + '-01'
+            "2020-" + getClaimMonth($("#claim-period").val()) + '-01'
           ).getUTCMonth();
           //get the value of the claim month
           var claimMonthValue = zeroIfEmpty($("#2020-" + claimMonthPrefix + claimMonth + "-yes").val());
